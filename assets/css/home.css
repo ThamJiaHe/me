@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  background: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+}
+
+*::selection {
+  background: #0080ff;
+  color: #fff;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+html::-webkit-scrollbar-thumb {
+  background: #04a0ef;
+}
+
+
+/* home section starts*/
+.home {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 100vh;
+  align-items: center;
+}
+.home #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.home .content {
+  flex: 1 1 40rem;
+  padding-top: 1rem;
+  z-index: 1;
+}
+.home .image {
+  flex: 1 1 40rem;
+  z-index: 1;
+}
+.home .image img {
+  width: 500px;
+  height: 500px;
+  object-fit:cover;
+  border-radius: 50%;
+  margin-left: 6rem;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(2,0,36);
+}
+.home .image img:hover {
+  box-shadow: 0 5px 20px #496eaa;
+}
+.home .content h2 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #002057;
+}
+.home .content h2 span {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #496eaa;
+}
+.home .content p {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+.home .content p span {
+  font-size: 2.5rem;
+  color: rgb(33, 71, 117);
+  font-weight: 600;
+  padding: 1rem 0;
+}
+.home .btn {
+  margin-top: 1rem;
+  position: absolute;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 4em;
+  transition: 0.5s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+  font-family: "Nunito", sans-serif;
+}
+.home .btn span {
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+.home .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.home .btn:hover {
+  background: #1a047e;
+}
+.home .btn:hover i {
+  transform: translateX(5px);
+}
+.home__scroll-button {
+  color: var(--first-color);
+  transition: 0.3s;
+}
+.home__scroll-mouse {
+  font-size: 2rem;
+}
+.home__scroll-arrow {
+  font-size: 1.25rem;
+}
+
+/* social icons start */
+.socials {
+  position: relative;
+  margin-top: 9rem;
+}
+.socials .social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.socials .social-icons li {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+.social-icons a {
+  font-size: 2rem;
+  display: inline-block;
+  line-height: 44px;
+  color: #9ec1d8;
+  background-color: #000000;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 30px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #ffffff;
+  background-color: #496eaa;
+}
+.social-icons a.github:hover {
+  background-color: #0e0e0e;
+}
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+/* social icons end */
+
+/* media queries starts*/
+@media only screen and (device-width: 1280px) {
+  .home .btn {
+    margin: 4rem 0;
+  }
+  .socials {
+    margin-top: 12rem;
+  }
+  .home .image img {
+    margin-top: -12rem;
+  }
+  .home .content p {
+    font-size: 2.2rem;
+  }
+  .home .content p span {
+    font-size: 2.2rem;
+  }
+}
+/* hero media queries ends*/
+/* hero section end */
+
+/* about section starts */
+.about {
+  background: rgba(248, 248, 248, 0.877);
+  margin-top: 100px;
+}
+.about .row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 4rem;
+}
+.about .row .image {
+  text-align: center;
+  flex: 1 1 35rem;
+}
+.about .row .image img {
+  margin: 4rem;
+  width: 30rem;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  mix-blend-mode: luminosity;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.about .row .image img:hover {
+  mix-blend-mode: normal;
+}
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 3rem;
+}
+.about .row .content h3 {
+  color: rgb(27, 27, 27);
+  font-size: 2.5rem;
+}
+.about .row .content .tag {
+  font-size: 1.4rem;
+  color: #020133;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.about .row .content p {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  font-family: "Nunito";
+  font-weight: 600;
+  text-transform: none;
+}
+.about .row .content .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-family: "Nunito";
+  font-weight: 600;
+}
+.about .row .content .box-container .box p {
+  text-transform: none;
+}
+.about .row .content .box-container .box p span {
+  color: #011aff;
+}
+.resumebtn {
+  margin-top: 6rem;
+}
+.resumebtn .btn {
+  padding: 1.7rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.3s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  font-family: "Nunito", sans-serif;
+}
+.resumebtn .btn span {
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+.resumebtn .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.resumebtn .btn:hover {
+  background: #1a047e;
+}
+.resumebtn .btn:hover i {
+  transform: translateX(5px);
+}
+.skillsbtn {
+  margin-top: 10rem;
+}
+.skillsbtn .btn {
+  padding: 2rem 2rem;
+  border-radius: 50px;
+  transition: 0.3s;
+  align-items: center;
+  color: #ffffff;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  font-family: "Nunito", sans-serif;
+}
+.skillsbtn .btn span {
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+.skillsbtn .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.skillsbtn .btn:hover {
+  background: #1a047e;
+}
+.skillsbtn .btn:hover i {
+  transform: translateX(5px);
+}
+/* about media queries starts*/
+@media only screen and (device-width: 1280px) {
+  .about .row .image {
+    margin-top: 2rem;
+  }
+  .about .row .image img {
+    margin: 0 auto;
+    width: 80%;
+    mix-blend-mode: normal;
+  }
+  .about .row {
+    padding: 0.5rem;
+    margin-bottom: 7rem;
+  }
+  .about .row .content {
+    padding: 1rem;
+  }
+  .about .row .content .box-container {
+    gap: 0;
+  }
+}
+/* about media queries ends*/
+/* about section ends */
+
+.skills {
+  background: rgba(232, 232, 232, 0.281);
+  color: #000000;
+  border-radius: 20rem;
+  padding: 1px;
+  padding-top: 3rem;
+  width: auto;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 0; /* Ensure no space below */
+  min-height: 100vh; /* Fill the viewport height */
+  
+}
+
+.skills h2 {
+  color: #161010;
+}
+.tech-stack-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.tech-stack-wrapper {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 50px;
+}
+.skillsbox,
+.tooltip {
+  align-items: center;
+  display: flex;
+}
+.skillsbox {
+  width: 160px;
+  height: 160px;
+  justify-content: center;
+  border-radius: 30%;
+  border: 1px solid #292929;
+  position: relative;
+}
+.skillsbox .skillslogo{
+  width: auto;
+  height: 38%;
+  position: center;
+}
+
+.skillsbox:hover .tooltip {
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+.tooltip {
+  position: absolute;
+  top: -40px;
+  opacity: 0;
+  padding: 5px 10px;
+  justify-content: center;
+  transition-duration: 0.2s;
+  pointer-events: none;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+  font-variant-position: normal;
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+.edubtn{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.edubtn .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  margin: 0 10px;
+  border-radius: 45px;
+  transition: 0.5s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, .6);
+  text-align: center;
+}
+.edubtn .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: 'Nunito', sans-serif;
+}
+.edubtn .btn i {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.eduebtn .btn:hover{
+  background: #496eaa;
+}
+.edubtn .btn:hover i {
+  transform: translateX(-8px);
+}
+
+/* skills media queries starts*/
+@media only screen and (device-width: 1280px) {
+  .tech-stack-wrapper {
+    display: grid;
+    margin: 0 auto;   
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.skillsbox {
+    width: 100%;
+    height: calc(76vw / 2);
+}
+}
+/* skills media queries ends*/
+/* skills section ends */
+
+
