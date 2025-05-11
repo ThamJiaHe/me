@@ -468,5 +468,31 @@ html::-webkit-scrollbar-thumb {
 }
 /* skills media queries ends*/
 /* skills section ends */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 60px;
+    right: 80px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float img {
+    width: 30px;
+    height: 30px;
+}
 
 
